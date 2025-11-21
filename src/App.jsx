@@ -2,10 +2,9 @@ import React, { useState, useEffect, useRef, useCallback } from 'react';
 import Chart from 'chart.js/auto';
 
 // Global constants
-// const API_KEY = "AIzaSyD6NCw8ey1XS-mN7WedAez3GDPx4U7HJDw"; 
 const API_KEY=import.meta.env.VITE_GEMINI_API_KEY;
 const API_URL=`${import.meta.env.VITE_GEMINI_URL}?key=${API_KEY}`;
-// const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-09-2025:generateContent?key=${API_KEY}`;
+
 
 // Icon components (using inline SVG for simplicity)
 const SendIcon = () => (<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="feather feather-send"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>);
